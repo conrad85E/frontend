@@ -1,0 +1,143 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 20%;
+    background-color: white;
+    color: black;
+}
+
+h2, h4, p {
+    margin: 0px;
+}
+
+#card {
+    box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#top-section {
+    width: 100%;
+    height: 45%;
+    background-color: rgb(158, 150, 150);
+    padding: 30px;
+}
+
+#top-section h2 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 15px;
+}
+
+#top-section h4 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 10px;
+}
+
+#top-section p {
+    color: hsl(217, 13%, 76%);
+    line-height: 1.6rem;
+}
+
+#bottom-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 55%;
+    color: white;
+}
+
+#bottom-left-section, #bottom-right-section {
+    height: 100%;
+    padding: 30px;
+    flex-basis: 50%;
+}
+
+#bottom-left-section h4 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#bottom-left-section p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#price-container {
+    display: flex;
+    align-items: center;
+}
+
+#price {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+#price-frequency {
+    margin-left: 5px;
+    font-size: 0.9rem;
+}
+
+#bottom-right-section h4 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0px;
+}
+
+#bottom-right-section ul {
+    font-size: 0.9rem;
+    padding: 0px;
+    list-style: none;
+    line-height: 1.2rem;
+}
+
+#bottom-left-section {
+    background-color: hsl(179, 62%, 43%);   
+}
+
+#bottom-right-section {
+    background-color: hsl(179, 62%, 43%, 0.7);
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.35);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(71, 73%, 54%, 0.9);;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 776px) {
+    #card {
+        width: 600px;
+        height: 450px;
+    }
+
+    #bottom-section {
+        flex-direction: row;
+    }
+}
